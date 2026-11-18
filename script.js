@@ -33,7 +33,6 @@ window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
 const reviewTrack = document.querySelector('#review-track');
 const previousReview = document.querySelector('.review-previous');
 const nextReview = document.querySelector('.review-next');
-const reviewPosition = document.querySelector('.review-position');
 const reviewCards = [...reviewTrack.querySelectorAll('.review')];
 
 function reviewStep() {
@@ -42,14 +41,8 @@ function reviewStep() {
 }
 
 function updateReviewControls() {
-  const first = Math.round(reviewTrack.scrollLeft / reviewStep());
-  const visible = Math.round(reviewTrack.clientWidth / reviewStep());
-  const last = Math.min(reviewCards.length, first + Math.max(1, visible));
   previousReview.disabled = reviewTrack.scrollLeft < 2;
   nextReview.disabled = reviewTrack.scrollLeft + reviewTrack.clientWidth >= reviewTrack.scrollWidth - 2;
-  reviewPosition.textContent = first + 1 === last
-    ? `${last} de ${reviewCards.length}`
-    : `${first + 1}–${last} de ${reviewCards.length}`;
 }
 
 function moveReview(direction) {

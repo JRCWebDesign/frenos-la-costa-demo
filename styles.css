@@ -649,8 +649,8 @@ main::before {
   gap:22px;
   overflow-x:auto;
   scroll-snap-type:x mandatory;
-  scrollbar-width:thin;
-  padding-bottom:14px;
+  scrollbar-width:none;
+  padding-bottom:0;
   scroll-behavior:smooth;
 }
 .review {
@@ -787,13 +787,17 @@ main::before {
   margin-top:8px;
 }
 .carousel-controls button {
-  min-height:44px;
-  padding:8px 16px;
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  padding:0;
   color:var(--text);
   background:#202020;
   border:1px solid #a99b20;
   border-radius:6px;
-  font-size:14px;
+  font-size:32px;
+  line-height:1;
 }
 .carousel-controls button:hover:not(:disabled) {
   background:var(--accent);
@@ -803,10 +807,6 @@ main::before {
   opacity:.4;
   cursor:default;
 }
-.review-position {
-  font-size:13px;
-  color:var(--muted);
-}
 .review-grid:focus-visible {
   outline:2px solid var(--accent);
   outline-offset:5px;
@@ -815,4 +815,8 @@ main::before {
   .review-grid {
     scroll-behavior:auto;
   }
+}
+
+.review-grid::-webkit-scrollbar {
+  display:none;
 }

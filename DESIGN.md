@@ -22,4 +22,4 @@ Referencia directa del usuario aportada el 18 de noviembre de 2026. Nombre FRENO
 
 Reseñas con borde amarillo, estrellas y fondo grafito según Instagram. Línea amarilla continua en el margen. Enlaces sin flechas y opiniones sin fechas. Contactanos comparte la misma navegación y estilo. Mapa de Google embebido por identificador del negocio.
 
-Reseñas en carrusel horizontal con desplazamiento táctil, teclado, controles Anterior/Siguiente y contador. Dos tarjetas en escritorio, una en celular. Mapa en bloque identificado, con carga inmediata.
+Reseñas en carrusel horizontal con desplazamiento táctil, teclado, controles de flecha sin contador ni barra de desplazamiento visible. Dos tarjetas en escritorio, una en celular. Mapa en bloque identificado, con carga inmediata.
