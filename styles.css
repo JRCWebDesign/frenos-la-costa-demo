@@ -26,6 +26,8 @@
 }
 body {
   margin:0;
+  position:relative;
+  display:flow-root;
   background:var(--background);
   color:var(--text);
   font:17px/1.55 var(--font);
@@ -462,7 +464,7 @@ h3 {
   position:relative;
   min-height:690px;
   isolation:isolate;
-  overflow:clip;
+  overflow:visible;
   background:var(--background);
 }
 .hero-copy {
@@ -486,9 +488,9 @@ h1 span {
 .hero-car {
   position:absolute;
   z-index:-1;
-  width:94%;
-  max-width:none;
-  right:-8%;
+  width:88%;
+  max-width:100%;
+  right:0;
   top:0;
   height:auto;
   mix-blend-mode:lighten;
@@ -535,8 +537,8 @@ h1 span {
   }
   .hero-car {
     top:50px;
-    right:-3%;
-    width:98%;
+    right:0;
+    width:94%;
   }
   .hero-caption {
     bottom:45px;
@@ -564,8 +566,8 @@ h1 span {
   }
   .hero-car {
     top:160px;
-    right:-16px;
-    width:calc(100% + 32px);
+    right:0;
+    width:100%;
   }
   .hero-caption {
     bottom:64px;
@@ -589,16 +591,7 @@ h1 span {
 main {
   position:relative;
 }
-main::before {
-  content:"";
-  position:absolute;
-  top:36px;
-  bottom:0;
-  left:max(12px, calc((100% - 1276px) / 2));
-  width:3px;
-  border-radius:3px;
-  background:var(--accent);
-}
+
 .header nav a {
   font-size:15px;
   font-weight:400;
@@ -607,10 +600,9 @@ main::before {
   display:block;
   position:relative;
   padding:60px 34px 38px;
-  border-left:6px solid var(--accent);
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  border-radius:16px 0 0 16px;
+  border-radius:0;
   background:repeating-linear-gradient(45deg, transparent 0 88px, rgba(255,255,255,.025) 88px 89px);
 }
 .reviews-heading {
@@ -739,13 +731,9 @@ main::before {
   border-color:var(--accent);
 }
 @media(max-width:700px) {
-  main::before {
-    left:7px;
-    width:2px;
-  }
+  
   .reviews {
     padding:30px 18px;
-    border-left-width:4px;
   }
   .reviews-heading {
     flex-direction:column;
@@ -819,4 +807,16 @@ main::before {
 
 .review-grid::-webkit-scrollbar {
   display:none;
+}
+
+body::before {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  width:3px;
+  background:var(--accent);
+  pointer-events:none;
+  z-index:6;
 }
