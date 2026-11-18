@@ -453,14 +453,14 @@ h3 {
 }
 .hero {
   position:relative;
-  min-height:690px;
+  min-height:820px;
   isolation:isolate;
   overflow:visible;
   background:var(--background);
 }
 .hero-copy {
   position:relative;
-  z-index:2;
+  z-index:0;
   padding-top:100px;
   width:65%;
   pointer-events:none;
@@ -478,13 +478,13 @@ h1 span {
 }
 .hero-car {
   position:absolute;
-  z-index:-1;
-  width:88%;
-  max-width:100%;
-  right:0;
+  z-index:1;
+  opacity:.65;
+  width:calc(100% + 48px);
+  max-width:none;
+  right:-24px;
   top:0;
   height:auto;
-  mix-blend-mode:lighten;
   pointer-events:none;
 }
 .hero-caption {
@@ -510,7 +510,7 @@ h1 span {
 }
 @media (min-width:1600px) {
   .hero {
-    min-height:730px;
+    min-height:850px;
   }
 }
 @media (max-width:1000px) {
@@ -521,15 +521,15 @@ h1 span {
     gap:18px;
   }
   .hero {
-    min-height:610px;
+    min-height:700px;
   }
   .hero-copy {
     padding-top:85px;
   }
   .hero-car {
     top:50px;
-    right:0;
-    width:94%;
+    right:-16px;
+    width:calc(100% + 32px);
   }
   .hero-caption {
     bottom:45px;
@@ -556,9 +556,9 @@ h1 span {
     line-height:.9;
   }
   .hero-car {
-    top:160px;
-    right:0;
-    width:100%;
+    top:100px;
+    right:-12px;
+    width:calc(100% + 24px);
   }
   .hero-caption {
     bottom:64px;

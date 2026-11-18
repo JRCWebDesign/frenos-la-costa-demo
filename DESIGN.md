@@ -27,3 +27,5 @@ Reseñas en carrusel horizontal con desplazamiento táctil, teclado, controles d
 La línea amarilla recorre el borde izquierdo del documento completo, desde arriba hasta el pie. La portada encuadra el auto completo dentro del área disponible.
 
 Contacto principal mediante botón WhatsApp amarillo con número e ícono oscuro. Mapa integrado en un panel grafito con borde superior amarillo, cabecera y acción Cómo llegar.
+
+Auto ampliado en capa superior al título, con recorte alfa y opacidad que permite leer las letras por detrás de la carrocería. Los controles de contacto permanecen en primer plano.
