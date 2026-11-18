@@ -479,8 +479,8 @@ h1 span {
 .hero-car {
   position:absolute;
   z-index:1;
-  opacity:.85;
-  filter:brightness(.46) contrast(1.1);
+  opacity:.82;
+  clip-path:polygon(6% 55%, 9% 47%, 21% 37%, 31% 31%, 39% 23%, 49% 17%, 75% 17%, 85% 20%, 91% 27%, 94% 40%, 96% 52%, 96% 69%, 92% 76%, 86% 79%, 65% 83%, 49% 84%, 31% 82%, 6% 77%);
   width:calc(100% + 48px);
   max-width:none;
   right:-24px;
@@ -882,9 +882,4 @@ h1 span:first-child {
 h1 span:last-child {
   z-index:2;
 }
-.hero-brakes {
-  opacity:1;
-  filter:brightness(.9);
-  mask-image:radial-gradient(ellipse 11% 18% at 55% 72%, #000 65%, transparent 100%);
-  -webkit-mask-image:radial-gradient(ellipse 11% 18% at 55% 72%, #000 65%, transparent 100%);
-}
+
