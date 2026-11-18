@@ -14,3 +14,5 @@ La portada del auto es una ilustración generada. El logo está recortado del pe
 Fuente del negocio: https://www.instagram.com/frenos_la_costa/
 
 Tipografía Barlow, distribuida bajo SIL Open Font License. Licencia y créditos en `assets/OFL.txt`.
+
+Reseñas adicionales transcritas del perfil de Google enlazado por el usuario. Se muestran extractos breves con autor y enlace al perfil. Íconos SVG propios en amarillo para Instagram, WhatsApp, Google y Facebook. El ícono de Facebook abre el diálogo para compartir la demo. El enlace del perfil del taller queda pendiente de aportar.
