@@ -33,3 +33,5 @@ Auto ampliado en capa superior al título, con recorte alfa y opacidad que permi
 Capas de portada corregidas, FRENOS detrás del auto y LA COSTA delante. Carrocería grafito oscura y freno delantero iluminado.
 
 Se recupera la imagen grafito original auto-frenos-transparente.png para conservar el tono elegido. FRENOS permanece en la capa trasera y LA COSTA delante.
+
+En celular el auto ocupa 175% del ancho de portada, recortado lateralmente para destacar disco y pinza en el centro inferior.
