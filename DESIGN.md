@@ -29,3 +29,5 @@ La línea amarilla recorre el borde izquierdo del documento completo, desde arri
 Contacto principal mediante botón WhatsApp amarillo con número e ícono oscuro. Mapa integrado en un panel grafito con borde superior amarillo, cabecera y acción Cómo llegar.
 
 Auto ampliado en capa superior al título, con recorte alfa y opacidad que permite leer las letras por detrás de la carrocería. Los controles de contacto permanecen en primer plano.
+
+Capas de portada corregidas, FRENOS detrás del auto y LA COSTA delante. Carrocería grafito oscura y freno delantero iluminado.
