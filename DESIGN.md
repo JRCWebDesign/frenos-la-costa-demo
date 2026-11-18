@@ -41,3 +41,5 @@ En móvil la imagen ampliada se extiende hasta los bordes de la pantalla, sin co
 La imagen de portada usa un fundido suave en sus bordes para integrarse con el fondo. Se elimina el recorte poligonal que generaba una base recta visible, conservando el tono y el encuadre móvil.
 
 Prueba solicitada, auto completo en celular con ancho del contenedor más 24px, centrado y con bordes fundidos.
+
+Menú móvil con apertura por deslizamiento, aparición escalonada de enlaces e ícono que se transforma en cierre. Enlaces cerrados inertes y preferencia de movimiento reducido respetada.

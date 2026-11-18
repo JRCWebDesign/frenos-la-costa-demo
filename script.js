@@ -1,15 +1,19 @@
 const menuButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('#menu');
+const mobileMenu = window.matchMedia('(max-width: 700px)');
+menu.inert = mobileMenu.matches;
 
 function closeMenu() {
   menuButton.setAttribute('aria-expanded', 'false');
   menu.classList.remove('is-open');
+  menu.inert = mobileMenu.matches;
 }
 
 menuButton.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') === 'true';
   menuButton.setAttribute('aria-expanded', String(!open));
   menu.classList.toggle('is-open', !open);
+  menu.inert = open;
 });
 
 menu.addEventListener('click', (event) => {
@@ -27,7 +31,7 @@ document.addEventListener('click', (event) => {
   if (!event.target.closest('.header')) closeMenu();
 });
 
-window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
+mobileMenu.addEventListener('change', closeMenu);
 
 // The native scroll area supports touch, keyboard and the same controls.
 const reviewTrack = document.querySelector('#review-track');
