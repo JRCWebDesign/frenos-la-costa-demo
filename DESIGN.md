@@ -25,3 +25,5 @@ Reseñas con borde amarillo, estrellas y fondo grafito según Instagram. Línea 
 Reseñas en carrusel horizontal con desplazamiento táctil, teclado, controles de flecha sin contador ni barra de desplazamiento visible. Dos tarjetas en escritorio, una en celular. Mapa en bloque identificado, con carga inmediata.
 
 La línea amarilla recorre el borde izquierdo del documento completo, desde arriba hasta el pie. La portada encuadra el auto completo dentro del área disponible.
+
+Contacto principal mediante botón WhatsApp amarillo con número e ícono oscuro. Mapa integrado en un panel grafito con borde superior amarillo, cabecera y acción Cómo llegar.
