@@ -35,3 +35,5 @@ Capas de portada corregidas, FRENOS detrás del auto y LA COSTA delante. Carroce
 Se recupera la imagen grafito original auto-frenos-transparente.png para conservar el tono elegido. FRENOS permanece en la capa trasera y LA COSTA delante.
 
 En celular el auto ocupa 175% del ancho de portada, recortado lateralmente para destacar disco y pinza en el centro inferior.
+
+En móvil la imagen ampliada se extiende hasta los bordes de la pantalla, sin corte en los márgenes del contenedor.
