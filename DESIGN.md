@@ -21,3 +21,5 @@ InformaciÃ³n de capturas de Instagram. Una reseÃ±a real compartida por el ta
 Referencia directa del usuario aportada el 18 de noviembre de 2026. Nombre FRENOS LA COSTA grande en amarillo #ffe500, dos líneas superpuestas a un auto semitransparente, con el freno delantero despejado. Barra de navegación redondeada, blanca al 7% con desenfoque, fija al desplazarse. Logo solo a la izquierda con 8px de margen interno. Contactanos lleva a la sección de contacto. El texto es HTML, la imagen solo contiene el auto.
 
 Reseñas con borde amarillo, estrellas y fondo grafito según Instagram. Línea amarilla continua en el margen. Enlaces sin flechas y opiniones sin fechas. Contactanos comparte la misma navegación y estilo. Mapa de Google embebido por identificador del negocio.
+
+Reseñas en carrusel horizontal con desplazamiento táctil, teclado, controles Anterior/Siguiente y contador. Dos tarjetas en escritorio, una en celular. Mapa en bloque identificado, con carga inmediata.

@@ -28,3 +28,42 @@ document.addEventListener('click', (event) => {
 });
 
 window.matchMedia('(min-width: 701px)').addEventListener('change', closeMenu);
+
+// The native scroll area supports touch, keyboard and the same controls.
+const reviewTrack = document.querySelector('#review-track');
+const previousReview = document.querySelector('.review-previous');
+const nextReview = document.querySelector('.review-next');
+const reviewPosition = document.querySelector('.review-position');
+const reviewCards = [...reviewTrack.querySelectorAll('.review')];
+
+function reviewStep() {
+  const gap = parseFloat(getComputedStyle(reviewTrack).gap);
+  return reviewCards[0].getBoundingClientRect().width + gap;
+}
+
+function updateReviewControls() {
+  const first = Math.round(reviewTrack.scrollLeft / reviewStep());
+  const visible = Math.round(reviewTrack.clientWidth / reviewStep());
+  const last = Math.min(reviewCards.length, first + Math.max(1, visible));
+  previousReview.disabled = reviewTrack.scrollLeft < 2;
+  nextReview.disabled = reviewTrack.scrollLeft + reviewTrack.clientWidth >= reviewTrack.scrollWidth - 2;
+  reviewPosition.textContent = first + 1 === last
+    ? `${last} de ${reviewCards.length}`
+    : `${first + 1}–${last} de ${reviewCards.length}`;
+}
+
+function moveReview(direction) {
+  reviewTrack.scrollBy({ left: direction * reviewStep() });
+}
+
+previousReview.addEventListener('click', () => moveReview(-1));
+nextReview.addEventListener('click', () => moveReview(1));
+reviewTrack.addEventListener('scroll', updateReviewControls, { passive: true });
+reviewTrack.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+    event.preventDefault();
+    moveReview(event.key === 'ArrowRight' ? 1 : -1);
+  }
+});
+new ResizeObserver(updateReviewControls).observe(reviewTrack);
+updateReviewControls();
