@@ -550,7 +550,7 @@ h1 span {
     height:30px;
   }
   .hero {
-    min-height:610px;
+    min-height:550px;
     overflow:visible;
   }
   .hero-copy {
@@ -563,9 +563,9 @@ h1 span {
     line-height:.9;
   }
   .hero-car {
-    top:60px;
-    right:-40%;
-    width:175%;
+    top:118px;
+    right:-12px;
+    width:calc(100% + 24px);
   }
   .hero-caption {
     bottom:64px;
@@ -581,7 +581,7 @@ h1 span {
     font-size:64px;
   }
   .hero {
-    min-height:620px;
+    min-height:550px;
   }
 }
 

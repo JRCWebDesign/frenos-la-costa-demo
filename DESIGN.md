@@ -39,3 +39,5 @@ En celular el auto ocupa 175% del ancho de portada, recortado lateralmente para 
 En móvil la imagen ampliada se extiende hasta los bordes de la pantalla, sin corte en los márgenes del contenedor.
 
 La imagen de portada usa un fundido suave en sus bordes para integrarse con el fondo. Se elimina el recorte poligonal que generaba una base recta visible, conservando el tono y el encuadre móvil.
+
+Prueba solicitada, auto completo en celular con ancho del contenedor más 24px, centrado y con bordes fundidos.
